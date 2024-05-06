@@ -1,0 +1,182 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Playfair Display", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header {
+  background-color: #012d63;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.flex {
+  height: 93px;
+  justify-content: start;
+}
+.header-logo {
+  margin-left: 168px;
+}
+
+.header-navigaion {
+  margin-left: 152px;
+}
+
+.header-list.flex {
+  padding: 0;
+  gap: 29px;
+}
+
+.header-list-title {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 24px;
+  color: #c7c7c7;
+}
+
+.header-list-title:hover {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+}
+.active {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* MAIN */
+
+.boots {
+  height: 858px;
+  background-image: url("/src/images/main/backFoots.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boots-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 94px;
+  margin-left: 170px;
+}
+
+.boots-logo {
+  width: 160px;
+  height: 120px;
+}
+
+.boots-text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 48px;
+  padding-left: 25px;
+}
+
+.boots-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 144px;
+  margin-left: 156px;
+}
+
+.boots-content {
+  margin-left: 164px;
+}
+
+.boots-name {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 72px;
+  margin-bottom: 12px;
+}
+
+.boots-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+  width: 508px;
+  margin-bottom: 41px;
+}
+
+.btn {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  border-radius: 10px;
+  width: 254px;
+  height: 67px;
+  border: none;
+  cursor: pointer;
+  background: #8e32c6;
+  transition: background 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background: #9700f6;
+}
+
+/* SECTION spray */
+
+.spray {
+  height: 606px;
+  background-image: url("/src/images/main/backSpray.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 105px 165px;
+}
+
+.spray-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  padding: 0;
+  border: 5px solid #8e32c6;
+}
+
+.spray-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 349px;
+  padding: 25px 50px;
+}
+
+.spray-list-text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  width: 161px;
+}
