@@ -74,7 +74,7 @@ ul {
 
 .boots {
   height: 858px;
-  background-image: url("/src/images/main/backFoots.png");
+  background-image: url("../src/images/main/backFoots.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -148,7 +148,7 @@ ul {
 
 .spray {
   height: 606px;
-  background-image: url("/src/images/main/backSpray.png");
+  background-image: url("../src/images/main/backSpray.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,20 +157,36 @@ ul {
 
 .spray-list {
   display: flex;
-  justify-content: center;
-  column-gap: 50px;
-  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
   border: 5px solid #8e32c6;
 }
 
 .spray-list-item {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 240px;
   height: 349px;
-  padding: 25px 50px;
+}
+
+.spray-list-item:nth-child(1):after,
+.spray-list-item:nth-child(2):after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #fff;
+  margin-right: -50px;
+}
+
+.spray-list-item:nth-child(2):after {
+  margin-right: -95px;
 }
 
 .spray-list-text {
@@ -179,4 +195,83 @@ ul {
   font-size: 36px;
   text-align: center;
   width: 161px;
+}
+
+/* section reviews */
+
+.reviews {
+  height: 520px;
+  background-image: url("../src/images/main/backReviewsFlowers.png"),
+    url("../src/images/main/backReviews.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.reviews-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 24px;
+}
+
+.reviews-list.flex {
+  flex-direction: column;
+}
+
+.reviews-list-item {
+  width: 255px;
+  height: 292px;
+  border-radius: 15px;
+  padding: 49px 13px 29px 13px;
+}
+
+.one {
+  box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
+  background: linear-gradient(
+    135deg,
+    #00e5e6 7.29%,
+    #00a8f7 26.04%,
+    #9a76f9 62.5%,
+    #cc5ec2 100%
+  );
+}
+
+.reviews-item-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.reviews-date {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #d8d8d8;
+}
+
+.reviews-discriptions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 47px;
+}
+
+.reviews-discriptions > div {
+  margin-left: 5px;
+}
+
+.reviews-discriptions h4 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.reviews-discriptions p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #d8d8d8;
 }
