@@ -319,4 +319,98 @@ ul {
 .form.flex {
   flex-direction: column;
   row-gap: 19px;
+  position: relative;
+}
+
+.order-text {
+  border-radius: 50px;
+  width: 580px;
+  height: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #959595;
+  padding: 11px 24px;
+  border: none;
+}
+
+.order-text.email {
+  width: 690px;
+  height: 60px;
+  font-family: var(--font-family);
+  font-size: 28px;
+  padding: 12px 25px;
+}
+
+.order-btn {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  opacity: 0.5;
+  top: 5px;
+
+  right: 365px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 28px;
+  color: #8d8d8d;
+  background: inherit;
+  cursor: pointer;
+}
+
+.order-submit {
+  border-radius: 16px;
+  width: 248px;
+  height: 68px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  padding: 20px 47px;
+  cursor: pointer;
+  border: none;
+  background: #8e32c6;
+  transition: background 0.5s ease-in-out;
+}
+
+.order-submit:hover {
+  background: #9700f6;
+}
+
+/* FOOTER */
+
+.info {
+  height: 292px;
+  background: #021635;
+  padding: 45px 165px 50px;
+}
+
+.info-content.flex {
+  justify-content: space-between;
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 10px;
+}
+
+.info-content.flex p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-mail {
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+}
+
+.info-wrapper.flex {
+  flex-direction: column;
+  align-items: flex-end;
 }
