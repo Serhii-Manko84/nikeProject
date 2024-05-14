@@ -1,6 +1,7 @@
 :root {
   --font-family: "Roboto", sans-serif;
   --second-family: "Playfair Display", sans-serif;
+  --third-family: "PT Serif", sans-serif;
 }
 
 * {
@@ -94,10 +95,11 @@ ul {
 }
 
 .boots-text {
-  font-family: var(--second-family);
+  font-family: var(--third-family);
   font-weight: 400;
   font-size: 48px;
   padding-left: 25px;
+  margin-top: -20px;
 }
 
 .boots-title {
@@ -177,7 +179,7 @@ ul {
 .spray-list-item:nth-child(2):after {
   content: "";
   position: absolute;
-  width: 2px;
+  width: 1px;
   top: 0;
   bottom: 0;
   right: 0;
@@ -350,8 +352,7 @@ ul {
   border: none;
   opacity: 0.5;
   top: 5px;
-
-  right: 365px;
+  right: 310px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 28px;
@@ -390,6 +391,7 @@ ul {
   justify-content: space-between;
   border-bottom: 1px solid #9b9b9b;
   padding-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .info-content.flex p {
@@ -413,4 +415,34 @@ ul {
 .info-wrapper.flex {
   flex-direction: column;
   align-items: flex-end;
+}
+
+.info-box.flex {
+  justify-content: space-between;
+  position: relative;
+}
+
+.info-box.flex p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.info-logo.flex {
+  flex-direction: column;
+  position: absolute;
+  top: -30px;
+  right: -12px;
+}
+
+.info-logo.flex a {
+  display: block;
+}
+
+.info-logo.flex span {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: -20px;
 }
